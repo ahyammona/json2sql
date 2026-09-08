@@ -1,9 +1,10 @@
 [package]
 name = "json2sql"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Read a JSON file and insert its records into MySQL, PostgreSQL, or SQLite"
 license = "MIT"
+readme = "README.md"
 repository = "https://github.com/ahyammona/json2sql"
 
 [lib]
