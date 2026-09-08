@@ -9,7 +9,7 @@ license = "MIT"
 crate-type = ["cdylib"]
 
 [dependencies]
-json2sql = { path = "../json2sql" }
+json2sql = { path = "../json2sql", version = "0.1.0"}
 napi = { version = "2", default-features = false, features = ["napi4", "async", "tokio_rt"] }
 napi-derive = "2"
 
