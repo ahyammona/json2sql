@@ -1,11 +1,11 @@
 {
-  "name": "json2sql",
+  "name": "jsontosql-native",
   "version": "0.1.0",
   "description": "Insert JSON records into MySQL, PostgreSQL, or SQLite from Node.js (native Rust addon)",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
-    "name": "json2sql-node",
+    "name": "jsontosql-native",
     "triples": {
       "defaults": true
     }
