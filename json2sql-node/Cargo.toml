@@ -1,0 +1,17 @@
+[package]
+name = "json2sql-node"
+version = "0.1.0"
+edition = "2021"
+description = "Node.js bindings for json2sql"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+json2sql = { path = "../json2sql" }
+napi = { version = "2", default-features = false, features = ["napi4", "async", "tokio_rt"] }
+napi-derive = "2"
+
+[build-dependencies]
+napi-build = "2"

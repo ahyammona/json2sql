@@ -1,0 +1,5 @@
+[
+  { "name": "Ada Lovelace", "age": 30, "active": true },
+  { "name": "Tunde Bakare", "age": 25, "active": false },
+  { "name": "Chidinma Okafor", "age": null, "active": true }
+]

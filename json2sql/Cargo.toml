@@ -1,0 +1,29 @@
+[package]
+name = "json2sql"
+version = "0.1.0"
+edition = "2021"
+description = "Read a JSON file and insert its records into MySQL, PostgreSQL, or SQLite"
+license = "MIT"
+repository = "https://github.com/ahyammona/json2sql"
+
+[lib]
+name = "json2sql"
+path = "src/lib.rs"
+
+[[bin]]
+name = "json2sql"
+path = "src/bin/cli.rs"
+
+[dependencies]
+sqlx = { version = "0.7", default-features = false, features = [
+    "runtime-tokio-rustls",
+    "any",
+    "mysql",
+    "postgres",
+    "sqlite",
+] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde_json = "1"
+indexmap = "2"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
